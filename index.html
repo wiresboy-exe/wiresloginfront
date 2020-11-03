@@ -1,0 +1,71 @@
+<html lang="en" class="js chrome webkit layout-large">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>WiresDev - Login</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1.0">
+	<meta name="theme-color" content="#f4f4f4">
+	<meta name="msapplication-navbutton-color" content="#f4f4f4">
+
+		<link rel="shortcut icon" href="https://wiresboy.ga/assets/img/logo.png">
+
+		<link rel="stylesheet" href="./assets/bootstrap.min.css">
+		<link rel="stylesheet" href="./assets/styles.css">
+	</head>
+	<body id="body" class="task-login" onLoad="myFunction()">
+	<div id="layout">
+		
+
+	<h1 class="voice">WiresDev Login</h1>
+
+	<div class="content selected no-navbar" role="main">
+		<img src="https://wiresboy.ga/assets/img/logo.png" id="logo" alt="Logo">
+		<form id="login-form" name="login-form" method="post" class="propform" action="http://wiresdev.ga:7878">
+			<input type="hidden" name="_token" value="uEZ7mT9IUo2KcmCPWpA0ohVcOplP161c" class="form-control">
+			<input type="hidden" name="_task" value="login" class="form-control"><input type="hidden" name="_action" value="login" class="form-control"><input type="hidden" name="_timezone" id="rcmlogintz" value="Europe/London" class="form-control"><input type="hidden" name="_url" id="rcmloginurl" value="i=1" class="form-control"><table><tbody><tr class="form-group row"><td class="title" style="display: none;"><label for="rcmloginuser">Username</label>
+				</td>
+					<td class="input input-group input-group-lg"><span class="input-group-prepend"><i class="input-group-text icon"><img draggable="false" width="25px" src="https://www.flaticon.com/svg/static/icons/svg/848/848043.svg"></i></span><input name="_user" id="rcmloginuser" required="" size="40" autocapitalize="off" autocomplete="off" type="text" class="form-control" placeholder="Username"></td>
+				</tr>
+					<tr class="form-group row"><td class="title" style="display: none;"><label for="rcmloginpwd">Password</label>
+				</td>
+					<td class="input input-group input-group-lg"><span class="input-group-prepend"><i class="input-group-text icon"><img draggable="false" width="25px" src="https://www.flaticon.com/svg/static/icons/svg/3064/3064197.svg"></i></span><input name="_pass" id="rcmloginpwd" required="" size="40" autocapitalize="off" autocomplete="off" type="password" class="form-control" placeholder="Password"></td>
+				</tr>
+				</tbody>
+			</table>
+			<p class="formbuttons"><button type="submit" id="rcmloginsubmit" class="button mainaction submit btn btn-primary btn-lg text-uppercase w-100">Login</button>
+			</p>
+
+			<div id="login-footer" role="contentinfo">
+				ItzWiresDev#6193
+				&nbsp;•&nbsp; <a href="https://support.wiresdev.ga" target="_blank" class="support-link">Get support</a>				
+			</div>
+		</form>
+	</div>
+		<noscript>
+			<p class="noscriptwarning">Warning: This login requires Javascript! In order to use it please enable Javascript in your browser's settings.</p>
+		</noscript>
+	</div>
+	<a href="https://support.wiresdev.ga" target="_blank" id="supportlink" class="hidden">Get support</a>
+	<div id="messagestack"></div>
+	</body>
+</html>
+<style>
+	@keyframes bg{
+		0%{
+			background: #7e009e;
+		}
+		37.5%{
+			background: #00496b;
+		}
+		75%{
+			background: #680049;
+		}
+		100%{
+			background: #7e009e;
+		}
+	}
+
+	body{
+		transition: 0.1s;
+		animation: bg 50s infinite linear;
+	}
+</style>
